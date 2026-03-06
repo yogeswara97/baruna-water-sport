@@ -1,8 +1,8 @@
 export default function Hero() {
-    return (
-        <section>
+  return (
+    <section>
 
-            <div className="
+      <div className="
         flex
         flex-col
         lg:flex-row
@@ -14,31 +14,32 @@ export default function Hero() {
         flex-1
       ">
 
-                {/* LEFT INFO */}
-                <div className="
+        {/* LEFT INFO */}
+        <div className="
           order-2
           lg:order-1
           max-w-md
           space-y-6
         ">
 
-                    <p className="text-xs tracking-widest text-gray-300">
-                        [PORTFOLIO 24-25]
-                    </p>
+          <p className="text-xs tracking-widest text-gray-300">
+            [OCEAN ADVENTURE]
+          </p>
 
-                    <p className="text-sm md:text-base leading-relaxed text-gray-200">
-                        JOIN OUR LESSONS, TRIPS, AND CAMPS — FOR BEGINNERS,
-                        DREAMERS, AND WAVE CHASERS.
-                    </p>
+          <p className="text-sm md:text-base leading-relaxed text-gray-200">
+            DISCOVER THRILLING WATER ACTIVITIES — FROM JET SKI RIDES
+            TO BANANA BOATS AND PARASAILING. PERFECT FOR FRIENDS,
+            FAMILIES, AND ADVENTURE SEEKERS.
+          </p>
 
-                    <div className="text-2xl opacity-70">
-                        ↓
-                    </div>
+          <div className="text-2xl opacity-70">
+            ↓
+          </div>
 
-                </div>
+        </div>
 
-                {/* TITLE */}
-                <div className="
+        {/* TITLE */}
+        <div className="
           order-1
           lg:order-2
           w-full
@@ -47,7 +48,7 @@ export default function Hero() {
           lg:text-right
         ">
 
-                    <h1 className="
+          <h1 className="
             font-bold
             leading-tight
             text-5xl
@@ -56,10 +57,10 @@ export default function Hero() {
             lg:text-8xl
             xl:text-[110px]
           ">
-                        RIDE THE WAVE!
-                    </h1>
+            RIDE THE WAVE!
+          </h1>
 
-                    <h1 className="
+          <h1 className="
             font-bold
             leading-tight
             text-5xl
@@ -68,15 +69,15 @@ export default function Hero() {
             lg:text-8xl
             xl:text-[110px]
           ">
-                        CATCH YOUR FREEDOM!
-                    </h1>
+            CATCH YOUR FREEDOM!
+          </h1>
 
-                </div>
+        </div>
 
-            </div>
+      </div>
 
-            {/* FOOTER INFO */}
-            <div className="
+      {/* FOOTER INFO */}
+      <div className="
         grid
         grid-cols-1
         sm:grid-cols-2
@@ -89,22 +90,23 @@ export default function Hero() {
         text-gray-200
       ">
 
-                <div>
-                    <p className="text-gray-400 text-xs tracking-widest">LOCATION</p>
-                    <p>ANDALUSIA, SPAIN</p>
-                </div>
+        <div>
+          <p className="text-gray-400 text-xs tracking-widest">LOCATION</p>
+          <p>BALI, INDONESIA</p>
+        </div>
 
-                <div>
-                    <p className="text-gray-400 text-xs tracking-widest">PHONE</p>
-                    <p>+1 840 841 25 69</p>
-                </div>
+        <div>
+          <p className="text-gray-400 text-xs tracking-widest">PHONE</p>
+          <p>+62 812 3456 7890</p>
+        </div>
 
-                <div>
-                    <p className="text-gray-400 text-xs tracking-widest">EMAIL</p>
-                    <p>INFO@EMAIL.COM</p>
-                </div>
+        <div>
+          <p className="text-gray-400 text-xs tracking-widest">EMAIL</p>
+          <p>INFO@EMAIL.COM</p>
+        </div>
 
-            </div>
-        </section>
-    )
+      </div>
+
+    </section>
+  )
 }

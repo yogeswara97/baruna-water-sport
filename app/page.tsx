@@ -11,15 +11,13 @@ export default function Home() {
       {/* NAVBAR */}
       <nav className="flex justify-between items-center px-6 lg:px-16 py-6 text-xs md:text-sm tracking-widest">
 
-        <div className="font-bold text-lg">SUMMER</div>
+        <div className="font-bold text-lg">BARUNA WATER SPORT</div>
 
         {/* menu desktop */}
         <div className="hidden lg:flex gap-10 text-gray-200">
           <a className="hover:text-white">HOME</a>
           <a className="hover:text-white">PAGES</a>
           <a className="hover:text-white">BLOG</a>
-          <a className="hover:text-white">SHOP</a>
-          <a className="hover:text-white">CONTACT US</a>
         </div>
 
       </nav>
