@@ -2,10 +2,17 @@ import "./globals.css";
 import type { ReactNode } from "react";
 
 export const metadata = {
-  title: "Water Sport",
-  description: "Surf & Water Adventure",
+  title: "Baruna Water Sport Bali",
+  description:
+    "Baruna Water Sport Bali menyediakan jet ski, banana boat, parasailing dan berbagai aktivitas water sport di Bali.",
+  keywords: [
+    "baruna water sport",
+    "water sport bali",
+    "jet ski bali",
+    "banana boat bali",
+    "parasailing bali"
+  ],
 };
-
 interface RootLayoutProps {
   children: ReactNode;
 }
