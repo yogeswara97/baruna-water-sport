@@ -1,35 +1,20 @@
 import Footer from "@/components/Footer";
-import Gallery from "@/components/Galery";
+import GallerySection from "@/components/Galery";
 import Hero from "@/components/Hero";
-import MapSection from "@/components/MapSection";
-import Products from "@/components/Products";
+import ProductsSection from "@/components/Products";
+import WhatsAppIcon from "@/components/WhatsAppIcon";
 
-export default function Home() {
+
+export default function Page() {
   return (
-    <main className=" text-white min-h-[60vh] flex flex-col">
+    <main className="relative min-h-screen bg-[#001a2e] text-white">
 
-      {/* NAVBAR */}
-      <nav className="flex justify-between items-center px-6 lg:px-16 py-6 text-xs md:text-sm tracking-widest">
-
-        <div className="font-bold text-lg">BARUNA WATER SPORT</div>
-
-        {/* menu desktop */}
-        <div className="hidden lg:flex gap-10 text-gray-200">
-          <a className="hover:text-white">HOME</a>
-          <a className="hover:text-white">PAGES</a>
-          <a className="hover:text-white">BLOG</a>
-        </div>
-
-      </nav>
-
-      
       <Hero />
 
-      <Gallery />
-      <Products />
-      <MapSection />
+      <GallerySection />
+      <ProductsSection />
       <Footer />
-
+      <WhatsAppIcon />
     </main>
-  )
+  );
 }
