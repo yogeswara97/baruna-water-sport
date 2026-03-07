@@ -35,44 +35,13 @@ export default function WhatsAppIcon() {
 
   return (
     <>
-      <style>{`
-        @keyframes waBounce {
-          0%,100%{transform:translateY(0)}
-          50%{transform:translateY(-6px)}
-        }
-        @keyframes waPopUp {
-          from{opacity:0;transform:translateY(16px) scale(.95)}
-          to{opacity:1;transform:translateY(0) scale(1)}
-        }
-        @keyframes waCardIn {
-          from{opacity:0;transform:translateY(12px)}
-          to{opacity:1;transform:translateY(0)}
-        }
-        @keyframes pulsering {
-          0%{transform:scale(1);opacity:.6}
-          100%{transform:scale(1.9);opacity:0}
-        }
-
-        .wa-bounce{animation:waBounce 2.4s ease-in-out infinite}
-        .wa-popup{animation:waPopUp .3s cubic-bezier(.34,1.56,.64,1) both}
-        .wa-card-1{animation:waCardIn .3s .05s ease both}
-        .wa-card-2{animation:waCardIn .3s .15s ease both}
-
-        .pulse-ring{
-          position:absolute;
-          inset:-4px;
-          border-radius:9999px;
-          background:#25d366;
-          animation:pulsering 2s ease-out infinite;
-        }
-      `}</style>
 
       {/* CONTAINER */}
-      <div className="fixed bottom-6 right-6 z-50 flex flex-col items-end gap-3">
+      <div className="fixed bottom-6 right-6 z-25 flex flex-col items-end gap-3">
 
         {/* AGENT LIST */}
         {open && (
-          <div className="wa-popup flex flex-col gap-3 mb-1">
+          <div className="flex flex-col gap-3 mb-1">
 
             <div className="flex items-center gap-2 px-1">
               <div className="w-5 h-px bg-green-400/50" />
