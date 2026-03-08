@@ -37,18 +37,11 @@ export default function WhatsAppIcon() {
     <>
 
       {/* CONTAINER */}
-      <div className="fixed bottom-6 right-6 z-25 flex flex-col items-end gap-3">
+      <div className="fixed bottom-6 right-6 z-200 flex flex-col items-end gap-3">
 
         {/* AGENT LIST */}
         {open && (
           <div className="flex flex-col gap-3 mb-1">
-
-            <div className="flex items-center gap-2 px-1">
-              <div className="w-5 h-px bg-green-400/50" />
-              <span className="text-[0.6rem] tracking-[0.25em] uppercase text-green-400/70 font-semibold">
-                Chat with us
-              </span>
-            </div>
 
             {AGENTS.map((agent, i) => (
               <div

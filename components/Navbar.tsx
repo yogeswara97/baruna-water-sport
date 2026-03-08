@@ -20,7 +20,7 @@ export default function Navbar() {
 
   return (
     <>
-      <nav className="relative z-50 flex justify-between items-center mb-16 lg:mb-24 backdrop-blur-md">
+      <nav className="relative z-200 flex justify-between items-center mb-16 lg:mb-24 backdrop-blur-md">
 
         {/* LOGO */}
         <div className="font-bebas text-lg sm:text-xl tracking-[0.2em] text-cyan-400 flex items-center gap-2">
@@ -60,7 +60,7 @@ export default function Navbar() {
 
       {/* OVERLAY */}
       <div
-        className={`fixed inset-0 z-200 transition ${
+        className={`fixed inset-0 z-250 transition ${
           open ? "opacity-100 visible" : "opacity-0 invisible"
         }`}
       >
