@@ -43,9 +43,9 @@ export default function Navbar() {
         </ul>
 
         {/* DESKTOP BUTTON */}
-        <button className="hidden lg:block border border-cyan-400/40 text-cyan-400 text-[0.7rem] font-semibold tracking-[0.18em] uppercase px-5 py-2 rounded-full hover:bg-cyan-400 hover:text-[#001a2e] transition">
+        {/* <button className="hidden lg:block border border-cyan-400/40 text-cyan-400 text-[0.7rem] font-semibold tracking-[0.18em] uppercase px-5 py-2 rounded-full hover:bg-cyan-400 hover:text-[#001a2e] transition">
           Book Now
-        </button>
+        </button> */}
 
         {/* HAMBURGER (mobile + tablet) */}
         <button
@@ -102,11 +102,11 @@ export default function Navbar() {
             </ul>
 
             {/* CTA */}
-            <div className="mt-auto">
+            {/* <div className="mt-auto">
               <button className="w-full border border-cyan-400/40 text-cyan-400 text-xs tracking-[0.18em] uppercase px-6 py-3 rounded-full hover:bg-cyan-400 hover:text-[#001a2e] transition">
                 Book Now
               </button>
-            </div>
+            </div> */}
 
           </div>
         </div>

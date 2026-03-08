@@ -97,14 +97,14 @@ export default function GallerySection() {
       </div>
 
       {/* View All */}
-      <div className="mt-10 flex justify-center">
+      {/* <div className="mt-10 flex justify-center">
         <button className="inline-flex items-center gap-3 border border-cyan-400/30 text-cyan-400 text-[0.7rem]
                            tracking-[0.2em] uppercase px-8 py-3 rounded-full
                            hover:bg-cyan-400/10 hover:border-cyan-400/60 transition-all duration-300">
           View Full Gallery
           <span className="text-xs">→</span>
         </button>
-      </div>
+      </div> */}
     </section>
   );
 }
