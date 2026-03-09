@@ -20,7 +20,7 @@ export default function Navbar() {
 
   return (
     <>
-      <nav className="relative z-200 flex justify-between items-center mb-16 lg:mb-24 backdrop-blur-md">
+      <nav className="relative z-200 flex justify-between items-center  backdrop-blur-md px-6 sm:px-10 lg:px-20 py-8 lg:py-12">
 
         {/* LOGO */}
         <div className="font-bebas text-lg sm:text-xl tracking-[0.2em] text-cyan-400 flex items-center gap-2">
@@ -70,46 +70,39 @@ export default function Navbar() {
           className="absolute inset-0 backdrop-blur-md bg-black/40"
         />
 
-        {/* SIDE MENU */}
-        <div
-          className={`absolute right-0 top-0 h-full w-[85%] sm:w-[60%] md:w-[45%] max-w-[380px] bg-[#001a2e] border-l border-cyan-400/20 transform transition-transform duration-300 ${
-            open ? "translate-x-0" : "translate-x-full"
-          }`}
-        >
-          <div className="flex flex-col h-full p-10">
+        {/* TOP MENU */}
+<div
+  className={`absolute top-0 left-0 w-full bg-[#001a2e] border-b border-cyan-400/20 transform transition-transform duration-300 ${
+    open ? "translate-y-0" : "-translate-y-full"
+  }`}
+>
+  <div className="flex flex-col p-10">
 
-            {/* CLOSE */}
-            <button
-              onClick={() => setOpen(false)}
-              className="self-end text-cyan-400 text-xl"
-            >
-              ✕
-            </button>
+    {/* CLOSE */}
+    <button
+      onClick={() => setOpen(false)}
+      className="self-end text-cyan-400 text-xl"
+    >
+      ✕
+    </button>
 
-            {/* LINKS */}
-            <ul className="flex flex-col gap-8 mt-16">
-              {NAV_LINKS.map((link) => (
-                <li key={link.label}>
-                  <Link
-                    href={link.href}
-                    onClick={() => setOpen(false)}
-                    className="text-sm tracking-[0.18em] uppercase text-blue-200/70 hover:text-cyan-400"
-                  >
-                    {link.label}
-                  </Link>
-                </li>
-              ))}
-            </ul>
+    {/* LINKS */}
+    <ul className="flex flex-col gap-8 mt-10">
+      {NAV_LINKS.map((link) => (
+        <li key={link.label}>
+          <Link
+            href={link.href}
+            onClick={() => setOpen(false)}
+            className="text-sm tracking-[0.18em] uppercase text-blue-200/70 hover:text-cyan-400"
+          >
+            {link.label}
+          </Link>
+        </li>
+      ))}
+    </ul>
 
-            {/* CTA */}
-            {/* <div className="mt-auto">
-              <button className="w-full border border-cyan-400/40 text-cyan-400 text-xs tracking-[0.18em] uppercase px-6 py-3 rounded-full hover:bg-cyan-400 hover:text-[#001a2e] transition">
-                Book Now
-              </button>
-            </div> */}
-
-          </div>
-        </div>
+  </div>
+</div>
       </div>
     </>
   );

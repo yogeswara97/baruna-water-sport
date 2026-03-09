@@ -39,7 +39,7 @@ const GALLERY_ITEMS = [
 
 export default function GallerySection() {
   return (
-    <section className="relative py-24 px-6 sm:px-10 lg:px-20 overflow-hidden">
+    <section className="relative py-24 px-6 sm:px-10 lg:px-20 overflow-hidden" id="activities">
       {/* Section Header */}
       <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-14">
         <div>

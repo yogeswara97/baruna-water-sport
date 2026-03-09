@@ -1,5 +1,9 @@
+import WhatsAppIcon from "@/components/WhatsAppIcon";
 import "./globals.css";
 import type { ReactNode } from "react";
+import Footer from "@/components/Footer";
+import Navbar from "@/components/Navbar";
+import Background from "@/components/ui/Background";
 
 export const metadata = {
   title: "Baruna Water Sport Bali",
@@ -20,7 +24,15 @@ interface RootLayoutProps {
 export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <html lang="en">
-      <body className="bg-primary">{children}</body>
+      <body className="relative bg-[#001a2e] text-white">
+        <Background />
+        <Navbar />
+
+        {children}
+
+        <Footer />
+        <WhatsAppIcon />
+      </body>
     </html>
   );
 }

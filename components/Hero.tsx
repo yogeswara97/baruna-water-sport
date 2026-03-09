@@ -19,9 +19,9 @@ export default function Hero() {
         <div className="relative  font-barlow overflow-x-hidden">
 
 
-            <section className="relative z-100  flex flex-col px-6 sm:px-10 lg:px-20 py-8 lg:py-12">
+            <section className="relative z-100  flex flex-col px-6 sm:px-10 lg:px-20 pb-8 lg:pb-12">
 
-                <Navbar />
+                
                 {/* HERO GRID */}
                 <div className="flex-1 grid grid-cols-1 lg:grid-cols-2 items-end gap-16">
 
